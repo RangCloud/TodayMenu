@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(248, 231, 232);
+}
+/* 제목 설정 */
+h1 {
+  text-align: center;
+  transform: translateY(150%);
+}
+
+.contentWrap {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.menuBox {
+  width: 100px;
+  height: 500px;
+}
+/* 메뉴 리스트 박스 크기 */
+.menuBtn {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+/* 메뉴 리스트 버튼 디자인 */
+.menuBtnSet {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+}
+/* 메뉴 보여주는 박스 */
+.imgBox {
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+}
+/* 시작 누르는 박스 */
+.handleBox {
+  border: 1px solid black;
+  width: 100px;
+  height: 300px;
+}
+/* 다시 시작 하는 박스 */
+.resetBox {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  transform: translateY(-100%);
+}
+/* 재시작 버튼 모양 */
+#resetBtn {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+}
