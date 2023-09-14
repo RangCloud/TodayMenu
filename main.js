@@ -1,8 +1,14 @@
-let playButton = document.getElementById(); // 시작버튼
+let playButton = document.getElementById("handler"); // 시작버튼
 let resetButton = document.getElementById("resetBtn"); // 리셋버튼
+let koFoodBtn = document.getElementById("koBtn") // 한식버튼
+let jaFoodBtn = document.getElementById("jaBtn") // 일식버튼
+let chFoodBtn = document.getElementById("chBtn") // 중식버튼
+let usFoodBtn = document.getElementById("usBtn") // 양식버튼
+let allFoodBtn = document.getElementById("allBtn") // 모두버튼
+let resultText = document.getElementById("resultText") // 나오는 음식
 
-resetButton.addEventListener("click", reset);
 playButton.addEventListener("click", start);
+resetButton.addEventListener("click", reset);
 
 // 모든 메뉴 리스트
 let allFood = [
@@ -100,15 +106,27 @@ let usFood = [
   "치킨",
 ];
 
-function start() {}
 
-// 메뉴 랜덤으로 뽑기
-function randomValueFood(foodList) {
+// 랜덤 메뉴 생성
+function randomValueFood(foodList){
   const random = Math.floor(Math.random() * foodList.length);
   return foodList[random];
 }
 
+
 let koFoodList = randomValueFood(koFood);
+let jaFoodList = randomValueFood(jaFood);
+let chFoodList = randomValueFood(chFood);
+let usFoodList = randomValueFood(usFood);
+let allFoodList = randomValueFood(allFood);
+
+function start() {
+  resultText.innerText = koFoodList;
+}
+start();
 
 // 리셋 클릭시 설정
-function reset() {}
+function reset() {
+  resultText.style.display = none;
+}
+reset();
