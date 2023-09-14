@@ -113,7 +113,6 @@ function randomValueFood(foodList){
   return foodList[random];
 }
 
-
 let koFoodList = randomValueFood(koFood);
 let jaFoodList = randomValueFood(jaFood);
 let chFoodList = randomValueFood(chFood);
@@ -129,4 +128,3 @@ start();
 function reset() {
   resultText.style.display = none;
 }
-reset();
