@@ -120,7 +120,7 @@ let usFoodList = randomValueFood(usFood);
 let allFoodList = randomValueFood(allFood);
 
 function start() {
-  resultText.innerText = koFoodList;
+  resultText.innerText = allFoodList;
 }
 start();
 
