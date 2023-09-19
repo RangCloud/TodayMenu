@@ -65,14 +65,13 @@ button{
 .imgBox {
   border: 1px solid black;
   width: 350px;
-  height: 200px;
+  height: 250px;
   color: black;
 }
 #resultText{
   text-align: center;
+  margin-top: 50px;
   font-size: 6rem;
-  width: 100%;
-  height: 100%;
   font-family: 'Nanum Pen Script', cursive;
 }
 /* 시작 누르는 박스 */
