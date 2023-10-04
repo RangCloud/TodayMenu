@@ -121,6 +121,8 @@ let allFoodList = randomValueFood(allFood);
 
 function start() {
   resultText.innerText = allFoodList;
+
+  
 }
 start();
 
