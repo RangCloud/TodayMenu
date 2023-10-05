@@ -130,3 +130,5 @@ start();
 function reset() {
   resultText.style.display = none;
 }
+
+// 다시 눌렀을 때 슬롯이벤트 다시 보이게
